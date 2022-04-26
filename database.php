@@ -82,7 +82,6 @@
             $grade = htmlspecialchars($_POST["grade"]);
             // With type="number", this will probably be a number,
             //  but, just to be sure, use intval() to force a conversion.
-            $customerId = intval($_POST["customer_id"]);
 
             // Is $connection null?
             // If so, do nothing.
