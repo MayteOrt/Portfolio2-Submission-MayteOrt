@@ -17,7 +17,7 @@
    <p>Parents please submit your name, phone number, donation, and your child's grade below.</p>
     <?php
        connect();
-       signupTable();
+       bakeTable();
        updateTable();
        close();  
     ?>
