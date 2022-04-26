@@ -9,7 +9,7 @@
     $password = "";
 
     // Database
-    $database = "sales";
+    $database = "bake";
 
     // Global connection
     $connection = null;
@@ -29,7 +29,7 @@
         }
     }
 
-    function salesTable() {
+    function bakeTable() {
         // Use global $connection locally.
         global $connection;
 
@@ -38,7 +38,7 @@
         if($connection != null) {
             // Get the results of a query using the connection
             // TODO: Write SQL SELECT statement to read first name, last name, city, and state.
-            $name = "SELECT`first_name`,`last_name`,`city`,`state` FROM `customers`;";
+            $name = "SELECT`parentname`,`donation`,`grade` FROM `signup`;";
             $results = mysqli_query($connection,$name);
 
             // Start the HTML table.
@@ -50,10 +50,9 @@
                 echo("<tr>");
 
                 // TODO: for each key, add a column entry in HTML using echo().
-                echo ("<td>".$row["first_name"]."</td>");
-                echo ("<td>".$row["last_name"]."</td>");
-                echo ("<td>".$row["city"]."</td>");
-                echo ("<td>".$row["state"]."</td>");
+                echo ("<td>".$row["parentname"]."</td>");
+                echo ("<td>".$row["donation"]."</td>");
+                echo ("<td>".$row["grade"]."</td>");
 
                 // Reminder: HTML tables use <td> (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table#examples).
                 
@@ -72,18 +71,15 @@
         global $connection;
         // Perform validation.
         // (1) Do the keys exist?
-        if(isset($_POST["customer_id"]) &&
-           isset($_POST["first_name"]) &&
-           isset($_POST["last_name"]) &&
-           isset($_POST["city"]) &&
-           isset($_POST["state"])) {
+        if(isset($_POST["parentname"]) &&
+           isset($_POST["donation"]) &&
+           isset($_POST["grade"])) {
 
             // (2) Confirm the values.
             // Convert string input (to prevent injection attacks).
-            $firstName = htmlspecialchars($_POST["first_name"]);
-            $lastName = htmlspecialchars($_POST["last_name"]);
-            $state = htmlspecialchars($_POST["state"]);
-            $city = htmlspecialchars($_POST["city"]);
+            $parentname = htmlspecialchars($_POST["parentname"]);
+            $donation = htmlspecialchars($_POST["donation"]);
+            $grade = htmlspecialchars($_POST["grade"]);
             // With type="number", this will probably be a number,
             //  but, just to be sure, use intval() to force a conversion.
             $customerId = intval($_POST["customer_id"]);
@@ -92,7 +88,7 @@
             // If so, do nothing.
             if($connection != null) {
                 // Using the $connection, insert data into the database.
-                $results = mysqli_query($connection, "INSERT INTO customers (customer_id, first_name, last_name, city, state) VALUES({$customerId}, '{$firstName}', '{$lastName}', '{$city}', '{$state}')");
+                $results = mysqli_query($connection, "INSERT INTO signup (parentname, donation, grade,) VALUES('{$parentname}', '{$donation}', '{$grade}')");
             }
         }
     }
