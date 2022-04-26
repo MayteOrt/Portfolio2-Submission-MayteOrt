@@ -80,6 +80,7 @@
             // (2) Confirm the values.
             // Convert string input (to prevent injection attacks).
             $parentname = htmlspecialchars($_POST["parentname"]);
+            $phone = htmlspecialchars($_POST["phone"]);
             $donation = htmlspecialchars($_POST["donation"]);
             $grade = htmlspecialchars($_POST["grade"]);
             // With type="number", this will probably be a number,
