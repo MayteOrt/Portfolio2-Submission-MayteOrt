@@ -22,8 +22,6 @@
     ?>
     <form action= "index.php" method="POST">
       
-      <input type="number" placeholder="Customer ID"  name="customer_id"/>
-      
       <input type="text" placeholder="First Name"  name="first_name"/>
       
       <input type="text" placeholder="Last Name" name="last_name"/>
