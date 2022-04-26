@@ -87,7 +87,7 @@
             // If so, do nothing.
             if($connection != null) {
                 // Using the $connection, insert data into the database.
-                $results = mysqli_query($connection, "INSERT INTO signup (parentname, donation, grade,) VALUES('{$parentname}', '{$donation}', '{$grade}')");
+                $results = mysqli_query($connection, "INSERT INTO signup (parentname, phone, donation, grade,) VALUES('{$parentname}', '{$phone}','{$donation}', '{$grade}')");
             }
         }
     }
