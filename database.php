@@ -38,7 +38,7 @@
         if($connection != null) {
             // Get the results of a query using the connection
             // TODO: Write SQL SELECT statement to read first name, last name, city, and state.
-            $name = "SELECT`parentname`,`phone`, donation`,`grade` FROM `signup`;";
+            $name = "SELECT `parentname`,`phone`, donation`,`grade` FROM `signup`;";
             $results = mysqli_query($connection,$name);
 
             // Start the HTML table.
@@ -73,6 +73,7 @@
         // Perform validation.
         // (1) Do the keys exist?
         if(isset($_POST["parentname"]) &&
+           isset($_POST["phone"]) &&
            isset($_POST["donation"]) &&
            isset($_POST["grade"])) {
 
