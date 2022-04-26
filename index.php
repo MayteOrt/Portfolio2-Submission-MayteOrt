@@ -14,7 +14,12 @@
 
   <body>
    <h2>Sign Up for Baked Goods Donations for our 3rd Grade Bake Sale!</h2>
-   
+    <?php
+       connect();
+       salesTable();
+       updateTable();
+       close();  
+    ?>
     <form action= "index.php" method="POST">
       
       <input type="text" placeholder="First Name"  name="first_name"/>
@@ -27,14 +32,7 @@
       
       <button type= "submit">Submit</button>
 
-      <form style="text-align: center; "> 
-      
-      <?php
-       connect();
-       salesTable();
-       updateTable();
-       close();  
-    ?>
+      <form style="text-align: center; ">
   </form>
   </body>
   
