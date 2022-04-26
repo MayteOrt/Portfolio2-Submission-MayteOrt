@@ -38,7 +38,7 @@
         if($connection != null) {
             // Get the results of a query using the connection
             // TODO: Write SQL SELECT statement to read first name, last name, city, and state.
-            $name = "SELECT`parentname`,`donation`,`grade` FROM `signup`;";
+            $name = "SELECT`parentname`,`phone`, donation`,`grade` FROM `signup`;";
             $results = mysqli_query($connection,$name);
 
             // Start the HTML table.
@@ -51,6 +51,7 @@
 
                 // TODO: for each key, add a column entry in HTML using echo().
                 echo ("<td>".$row["parentname"]."</td>");
+                echo ("<td>".$row["phone"]."</td>");
                 echo ("<td>".$row["donation"]."</td>");
                 echo ("<td>".$row["grade"]."</td>");
 
