@@ -5,6 +5,12 @@
   <head>
     <title>Bake Sale</title>
   </head>
+  <style>
+      h2{
+          text-align: center;
+      }
+  </style>
+
   <body>
    <h2>Sign Up for Baked Goods Donations for our 3rd Grade Bake Sale!</h2>
     <?php
