@@ -37,7 +37,7 @@
          // If so, do nothing (because a connection has not been made yet).
         if($connection != null) {
             // Get the results of a query using the connection
-            // TODO: Write SQL SELECT statement to read first name, last name, city, and state.
+            // TODO: Write SQL SELECT statement to read first parent name, phone, donation and grade.
             $name = "SELECT`parentname`,`phone`, `donation`,`grade`, FROM `signup`;";
             $results = mysqli_query($connection,$name);
 

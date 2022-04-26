@@ -9,11 +9,14 @@
       h2{
           text-align: center;
       }
+      p{
+        text-align: center;
+      }
     
   </style>
 
   <body>
-   <h2>Sign Up for Baked Goods Donations for our school Bake Sale!</h2>
+   <h2>Bake Sale Parent Donation Sign Up Sheet</h2>
    <p>Parents please submit your name, phone number, donation, and your child's grade below.</p>
     <?php
        connect();
