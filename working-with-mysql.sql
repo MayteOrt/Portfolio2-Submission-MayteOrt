@@ -1,4 +1,4 @@
-CREATE DATABASE sales;
+CREATE DATABASE bake;
 
 CREATE TABLE sales.customers (
 	customer_id INT(11),

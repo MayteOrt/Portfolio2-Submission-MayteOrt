@@ -9,9 +9,7 @@
       h2{
           text-align: center;
       }
-      .form{
-        text-align: center;
-      }
+    
   </style>
 
   <body>
