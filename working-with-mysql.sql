@@ -8,7 +8,7 @@ CREATE TABLE sales.customers (
 	email VARCHAR (255),
 	street VARCHAR (255),
 	city VARCHAR (255),
-	
+	state VARCHAR (255),
 	zip_code VARCHAR (255),
     PRIMARY KEY(customer_id)
 );
