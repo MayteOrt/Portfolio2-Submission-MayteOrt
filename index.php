@@ -33,8 +33,8 @@
       <input type="text" placeholder="State"  name="state"/>
       
       <button type= "submit">Submit</button>
-      
-      <form style style="text-align: center; ">
+
+      <form style="text-align: center; ">
   </form>
   </body>
   
