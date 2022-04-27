@@ -50,7 +50,7 @@
                 echo("<tr>");
 
                 // TODO: for each key, add a column entry in HTML using echo().
-                echo ("<td>".$row["parentname"]."</td>");
+                echo <center>("<td>".$row["parentname"]."</td>")</center>;
                //echo ("<td>".$row["phone"]."</td>");
                 echo ("<td>".$row["donation"]."</td>");
                 echo ("<td>".$row["grade"]."</td>");
