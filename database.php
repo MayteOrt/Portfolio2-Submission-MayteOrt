@@ -73,7 +73,7 @@
         // Perform validation.
         // (1) Do the keys exist?
         if(isset($_POST["parentname"]) &&
-           isset($_POST["phone"]) &&
+           //isset($_POST["phone"]) &&
            isset($_POST["donation"]) &&
            isset($_POST["grade"])) {
 
