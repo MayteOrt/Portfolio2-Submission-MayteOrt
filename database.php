@@ -51,7 +51,7 @@
 
                 // TODO: for each key, add a column entry in HTML using echo().
                 echo ("<td>".$row["parentname"]."</td>");
-                echo ("<td>".$row["phone"]."</td>");
+               //echo ("<td>".$row["phone"]."</td>");
                 echo ("<td>".$row["donation"]."</td>");
                 echo ("<td>".$row["grade"]."</td>");
 
@@ -73,7 +73,7 @@
         // Perform validation.
         // (1) Do the keys exist?
         if(isset($_POST["parentname"]) &&
-           //isset($_POST["phone"]) &&
+           isset($_POST["phone"]) &&
            isset($_POST["donation"]) &&
            isset($_POST["grade"])) {
 
