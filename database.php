@@ -38,7 +38,7 @@
         if($connection != null) {
             // Get the results of a query using the connection
             // TODO: Write SQL SELECT statement to read first parent name, phone, donation and grade.
-            $name = "SELECT` parentname`,`phone`, `donation`,`grade` FROM `signup`;";
+            $name = "SELECT `parentname`,`phone`, `donation`,`grade` FROM `signup`;";
             $results = mysqli_query($connection,$name);
 
             // Start the HTML table.
