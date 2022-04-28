@@ -5,16 +5,6 @@
   <head>
     <title>Bake Sale</title>
   </head>
-  <style>
-      h2{
-          text-align: center;
-      }
-      p{
-        text-align: center;
-      }
-    
-  </style>
-
   <body>
    <h2>Bake Sale Parent Donation Sign Up Sheet</h2>
    <p>Parents please submit your name, phone number, donation, and your child's grade below.</p>
